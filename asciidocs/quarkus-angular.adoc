@@ -1,0 +1,216 @@
+= Quarkus @ HTL Leonding
+Thomas W. Stütz
+1.0.0, 2021-06-16: reviewed by Christian Aberger
+ifndef::imagesdir[:imagesdir: images]
+//:toc-placement!:  // prevents the generation of the doc at this position, so it can be printed afterwards
+:sourcedir: ../src/main/java
+:icons: font
+//:sectnums:    // Nummerierung der Überschriften / section numbering
+:toc: left
+:toclevels: 1
+//Need this blank line after ifdef, don't know why...
+ifdef::backend-html5[]
+
+// https://fontawesome.com/v4.7.0/icons/
+//icon:file-text-o[link=https://raw.githubusercontent.com/htl-leonding-college/asciidoctor-docker-template/master/asciidocs/{docname}.adoc] ‏ ‏ ‎
+icon:github-square[link=https://github.com/htl-leonding-college/quarkus-curriculum] ‏ ‏ ‎
+icon:home[link=https://htl-leonding.github.io/]
+endif::backend-html5[]
+
+// print the toc here (not at the default position)
+//toc::[]
+
+
+== Preface
+
+HTL Leonding is a vocational college in Austria with about 1000 students and four departments:
+
+* Informatics
+* Media Engineering
+* Electronics
+* Medical Engineering
+
+The curriculum in each department lasts five years.
+Quarkus is taught in Informatics and Media Engineering in the 4th and 5th grade.
+Quarkus ist the backend, the frontend is Angular (Media Engineering) or Android (Informatics)
+
+== 4th grade
+
+department informatics: 3h
+department media engineering: 3h
+
+assumption: The students have knowledge working with JavaSE, maven, git, uml, json.
+
+
+
+|===
+|Topic | Contents
+
+|Java-ecosystem
+|IDE's, maven, git-repositories
+
+|Introduction
+a|
+* Jakarta EE and  Jakarta EE implementations,
+* microprofile and microprofile implementations
+* Quarkus - create a first project (hello world)
+* how to create a quarkus project (quarkus.io, ide-wizard, maven)
+
+|RESTful Resources
+|architectural constraints, http-methods, create a simple REST-Endpoint
+
+|REST with entities
+a|
+* JSON Processing in Java (JSON-B, JSON-P)
+* Create a simple REST-Endpoint with entities (CRUD)
+* use different clients to consume REST-service (curl, https://httpie.io/[httpie], browser-plugin, Postman, Insomnia)
+* create automated tests (https://rest-assured.io/[REST-assured], https://github.com/intuit/karate[karate])
+
+|CDI
+a|
+* Introduction
+* CDI in Jakarta EE
+* CDI in Quarkus
+
+|Java Persistence API (JPA)
+a|
+* Entity states
+* Annotations
+* Entity Relationships
+* Configuration in quarkus
+* Transactions
+* JPA in quarkus vs. JPA in JavaSE
+* Queries
+* Lifecycle methods
+* Testing with jUnit, https://assertj.github.io/doc/#assertj-core[AssertJ-core] und https://assertj.github.io/doc/#assertj-db[AssertJ-db]
+* Repository-Pattern (and how to use in quarkus). Active Record Pattern only in theory.
+* Create  a simple JPA-CRUD-app and automated testing
+
+|Panache in Quarkus
+a|
+* Repository pattern
+* Create a panache-CRUD-app
+
+|REST-Endpoints + JPA-Persistence
+|Create a backend w/ Panache and REST-Resources
+
+|REST-Clients with Quarkus
+|Create an REST-client-app w/ quarkus
+
+|Websockets
+a|
+* Simple Example w/ Websockets
+* Server-sent events
+
+|Messaging
+a|
+* Messaging - Introduction
+* Usage of Mosquitto w/ Quarkus
+
+
+|===
+
+== 5th Grade
+
+=== Quarkus
+
+|===
+|Topic | Contents
+
+
+|Securing a quarkus app w/ keycloak
+|
+
+|Deploying a quarkus app
+a|
+* docker and docker-compose
+* kubernetes
+
+|grpc (?)
+|
+
+|Reactive Programming - first steps
+|
+
+|===
+
+
+=== Angular
+
+IMPORTANT: Hausübungen sind für jedes Thema zu erstellen
+
+|===
+| Topic | Contents
+
+|Wiederholung
+a|
+* (Einfaches) Beispiel vlt. bezugnehmend auf die Mikroprojektthemen
+** Services
+** ...
+
+
+|Security
+|Authentifizierung / Autorisierung mit Keycloak
+
+|Bilder in DB
+a|
+* als File mit Link in DB
+* als BLOB
+* mit Upload in Angular
+
+|Deploying a angular app
+a|
+* docker and docker-compose
+* kubernetes
+
+|Formulare
+a|
+* blockierend
+* reaktiv
+
+|Testen mit Jasmine
+|
+
+|Verwendung von UI-Libraries
+a|
+* Material
+* Primefaces
+
+|Erstellen eines großen db-basierten Beispiels (als HÜ über das ganze Jahr)
+a|
+mit:
+
+* Menüs
+* Master-Detail-Formular
+* Paging und Sorting in Formularen
+* Verwendung eines Component-Frameworks
+* Bild-Upload
+* ...
+
+|===
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
