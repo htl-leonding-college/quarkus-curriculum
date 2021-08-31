@@ -41,7 +41,7 @@ department media engineering: 3h
 
 assumption: The students have knowledge working with JavaSE, maven, git, uml, json.
 
-
+=== Quarkus
 
 |===
 |Topic | Contents
@@ -109,6 +109,49 @@ a|
 
 
 |===
+
+=== Angular
+
+|===
+|Topic | Contents
+
+|Angular CLI
+|
+
+|Configuring WebStorm
+|
+
+|Angular Ecosystem
+|
+
+|Templates and Data Binding
+|
+
+|Components and Modules
+|
+
+|Accessinf WebAPIs
+|
+
+|Routing
+|
+
+|RxJS Basics
+|
+
+|Flexbox
+|
+
+|Testing with Jasmine
+|
+
+|openID Connect
+|
+
+
+|===
+
+
 
 == 5th Grade
 
