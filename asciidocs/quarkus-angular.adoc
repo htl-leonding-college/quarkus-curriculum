@@ -110,7 +110,22 @@ a|
 
 |===
 
-=== Angular
+
+=== Android (Informatik)
+
+|===
+|Topic | Contents
+
+|Einführung traditionelles Android
+| mit XML-Layout-Files
+
+|Jetpack Compose
+|
+
+|===
+
+
+=== Angular (Medientechnik)
 
 |===
 |Topic | Contents
